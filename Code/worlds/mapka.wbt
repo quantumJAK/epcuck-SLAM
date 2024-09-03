@@ -1,0 +1,83 @@
+#VRML_SIM V6.0 utf8
+WorldInfo {
+  info [
+    "Description"
+    "Author: first name last name <e-mail>"
+    "Date: DD MMM YYYY"
+  ]
+  physics "ddd"
+}
+Viewpoint {
+  orientation -0.999682 -0.0150476 -0.0202499 1.55029
+  position 0.916515 8.04048 1.21333
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+PointLight {
+  location 0 0.3 0
+}
+DEF FLOOR Supervisor {
+  translation -0.5 0 -0.5
+  children [
+    Shape {
+      geometry ElevationGrid {
+        color Color {
+          color [
+            0.803922 0.498039 0.298039
+            1 1 0
+          ]
+        }
+        colorPerVertex FALSE
+        xDimension 30
+        xSpacing 0.1
+        zDimension 30
+        zSpacing 0.1
+      }
+    }
+  ]
+  name "solid"
+  boundingObject Transform {
+    translation 0.5 0 0.5
+    children [
+      Plane {
+      }
+    ]
+  }
+}
+Bookcase {
+  translation 1.53206 0 -0.31392
+}
+Wall {
+  translation 0.87479 0 2.488
+}
+Wall {
+  translation 2.55893 0 0.889087
+  rotation 0 1 0 1.5708
+}
+KinectWithoutFoot {
+}
+WallWithDoubleWindowFrame {
+  translation -0.636575 0 1.00486
+  rotation 0 1 0 1.5708
+}
+Can {
+  translation -0.070626 0.0609627 -0.134938
+  rotation 0.79831 0.512936 0.315591 1.9992e-007
+}
+EPuck {
+  translation 2.06636 -6.74998e-005 0.928536
+  rotation 1.77627e-005 1 -6.69334e-005 2.62251
+  display_windowPosition 0.413249 0.545946
+}
+Wall {
+  translation 0.959872 0 -0.638215
+}
+Armchair {
+  translation 0.846507 0 0.824732
+}
+FruitBowl {
+  translation 1.81484 0 1.76795
+}
